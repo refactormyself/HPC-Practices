@@ -15,19 +15,16 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="complex_number.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="mandelbrot_parallel.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="mandelbrot_serial.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-  </ItemGroup>
-  <ItemGroup>
-    <ClCompile Include="main.c">
+    <ClCompile Include="quicksort.c">
       <Filter>Source Files</Filter>
     </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="quicksort_serial.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="quichsort_parallel.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>

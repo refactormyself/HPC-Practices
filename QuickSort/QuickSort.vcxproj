@@ -20,8 +20,8 @@
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>15.0</VCProjectVersion>
-    <ProjectGuid>{D7C1DB41-0FE1-4F41-A270-767D167753F7}</ProjectGuid>
-    <RootNamespace>Fractal</RootNamespace>
+    <ProjectGuid>{97AAFBF3-60AD-4B86-B9BE-9E0E8DAABB06}</ProjectGuid>
+    <RootNamespace>QuickSort</RootNamespace>
     <WindowsTargetPlatformVersion>10.0.17134.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
@@ -116,12 +116,11 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClInclude Include="complex_number.h" />
-    <ClInclude Include="mandelbrot_parallel.h" />
-    <ClInclude Include="mandelbrot_serial.h" />
+    <ClCompile Include="quicksort.c" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="main.c" />
+    <ClInclude Include="quichsort_parallel.h" />
+    <ClInclude Include="quicksort_serial.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

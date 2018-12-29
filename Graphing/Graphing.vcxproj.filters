@@ -15,18 +15,7 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="complex_number.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="mandelbrot_parallel.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="mandelbrot_serial.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-  </ItemGroup>
-  <ItemGroup>
-    <ClCompile Include="main.c">
+    <ClCompile Include="BasicGraph.c">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
