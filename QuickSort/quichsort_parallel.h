@@ -73,6 +73,7 @@ int*  reduced_para()
 {
 	int A[] = { 84, 30, 95, 94, 36, 73, 52, 23, 2, 13 };
 	static int S[10] = { 0 };
+
 #pragma omp parallel
 	{
 		// int S_private[10] = { 0 };
@@ -91,6 +92,8 @@ int*  reduced_para()
 // 			}
 // 		}
 // 	}
+	
+	}
 	return S;
 }
 
@@ -102,9 +105,9 @@ int* add_scan(int* arr, int size)
 		return arr;
 	}
 	int* arr_to_scan = (int*)malloc(size * sizeof(int));
-	int* arr_odd_idx = (int*)malloc(size / 2 * sizeof(int));
+	// int* arr_odd_idx = (int*)malloc(size / 2 * sizeof(int));
 	int* arr_even_idx;
-	int odd = 0, even = 0;
+	// int odd = 0, even = 0;
 
 	if (size%2 != 0)
 	{
@@ -125,19 +128,21 @@ int* add_scan(int* arr, int size)
 	arr_to_scan = add_scan(arr_to_scan, size);
 
 
-
+	return arr_to_scan;
 }
 
 int* paarallel_partition(int* arr, int size, int pivot)
 {
 	int* arr_flags = (int*)malloc(size * sizeof(int));
-	int* arr_idx = (int*)malloc(size * sizeof(int));
+	// int* arr_idx = (int*)malloc(size * sizeof(int));
 
-	int count = 0;
+	// int count = 0;
 	for (int i = 0; i < size; ++i)
 	{
 		arr_flags[i] = arr[i] <= arr[pivot] ? 1 : 0;
 	}
+
+	return arr_flags;
 }
 
 inline void quicksort_parallel(int arr[], int left, int right)
