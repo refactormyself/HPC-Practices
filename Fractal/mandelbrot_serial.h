@@ -17,7 +17,7 @@
 // 	return n;
 // }
 
-inline void generate_fractal_serial(const int max_iteration, const int width, const int height)
+void generate_fractal_serial(const int max_iteration, const int width, const int height)
 {
 	const int num_pixels = width * height;
 

@@ -15,7 +15,7 @@ static int mandelbrot_calculate(complexx c, int max_iteration)
 	return n;
 }
 
-inline void generate_fractal_parallel(const int _num_thread, const int max_iteration, const int width, const int height)
+void generate_fractal_parallel(const int _num_thread, const int max_iteration, const int width, const int height)
 {
 	omp_set_num_threads(_num_thread);
 	const int num_pixels = width * height;
